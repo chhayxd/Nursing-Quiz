@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hanuman:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="quiz-page">
+        <div class="quiz-card">
+
+            <div class="quiz-header">
+
+                <div class="quiz-title">
+                    <h1>Nursing Quiz</h1>
+                    <p id="progress">Question 1 / 5</p>
+                </div>
+
+                <div class="quiz-info">
+                    <span id="level-name">🟢 Easy</span>
+                    <span id="score">⭐ 0</span>
+                </div>
+
+            </div>
+
+            <h2 id="question">Question text</h2>
+
+            <div id="answers">
+                <button class="answer-btn"></button>
+                <button class="answer-btn"></button>
+                <button class="answer-btn"></button>
+                <button class="answer-btn"></button>
+            </div>
+
+            <div class="quiz-buttons">
+                <button id="confirm-btn" onclick="confirmAnswer()">
+                    ✓ Confirm
+                </button>
+
+                <button id="next-btn" onclick="nextQuestion()">
+                    ➜ Next
+                </button>
+
+                <button id="menu-btn" onclick="goToMenu()">
+                    🏠 Menu
+                </button>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

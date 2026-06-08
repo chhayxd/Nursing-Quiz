@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleindex.css">
+    <title>Nursing Question Game</title>
+</head>
+<body>
+    <div class="home-container">
+        <div class="home-card">
+            <div class="home-text">
+                <h1>Nursing<br>Question Game</h1>
+                <p>Test your nursing knowledge and choose your difficulty.</p>
+
+                <button id="start-btn" onclick="showLevelMenu()">Start Game</button>
+
+                <div id="level-box" style="display:none;">
+                    <h2>Select Difficulty</h2>
+
+                    <div class="level-buttons">
+                        <button class="level-btn" onclick="selectLevel('easy')">Easy</button>
+                        <button class="level-btn" onclick="selectLevel('medium')">Medium</button>
+                        <button class="level-btn" onclick="selectLevel('hard')">Hard</button>
+                    </div>
+
+                    <button id="play-btn" onclick="startSelectedLevel()" disabled>▶ Play</button>
+                </div>
+            </div>
+
+            <div class="home-image">
+                <img src="audio/female-doctor-nurse-avatar-professional-character-healthcare-worker-smiling-image-features-cheerful-dressed-medical-385984582-removebg-preview.png" alt="Nurse image">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

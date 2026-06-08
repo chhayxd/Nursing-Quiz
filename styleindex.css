@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: "Kantumruy Pro", Arial, sans-serif;
+    background: linear-gradient(135deg, #0aa6bd, #087c8c);
+    color: white;
+}
+
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-card {
+    width: 85%;
+    max-width: 1100px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 30px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.home-text {
+    flex: 1;
+    text-align: left;
+}
+
+.home-text h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.home-text p {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.home-image img {
+    width: 360px;
+    max-width: 100%;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    padding: 14px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#start-btn,
+#play-btn {
+    background: #ff9f43;
+    color: white;
+}
+
+.level-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.level-btn {
+    background: white;
+    color: #087c8c;
+}
+
+.selected-level {
+    background: #28a745;
+    color: white;
+    transform: scale(1.05);
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+button:disabled {
+    background: #999;
+    cursor: not-allowed;
+    transform: none;
+}
+
+@media (max-width: 800px) {
+    .home-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 42px;
+    }
+
+    .level-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
